@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Order Prediction</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Online Food Order</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender (1=Male, 0=Female):</label>
+                <input type="number" id="gender" name="gender" required>
+            </div>
+            <div class="form-group">
+                <label for="marital_status">Marital Status (1=Single, 2=Married):</label>
+                <input type="number" id="marital_status" name="marital_status" required>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation (1=Student, 2=Employee, 3=Self-Employed, 4=Housewife, 0=N/A):</label>
+                <input type="number" id="occupation" name="occupation" min="0" max="4" required>
+            </div>
+            <div class="form-group">
+                <label for="monthly_income">Monthly Income:</label>
+                <input type="number" id="monthly_income" name="monthly_income" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Educational Qualification (1=Graduate, 2=Post Graduate, 3=Ph.D., 4=School, 5=Uneducated):</label>
+                <input type="number" id="education" name="educational_qualifications" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="family_size">Family Size:</label>
+                <input type="number" id="family_size" name="family_size" required>
+            </div>
+            <div class="form-group">
+                <label for="pin_code">Pin Code:</label>
+                <input type="number" id="pin_code" name="pin_code" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback (1=Positive, 0=Negative):</label>
+                <input type="number" id="feedback" name="feedback" required>
+            </div>
+            <input type="submit" value="Predict">
+                  
+        </form>
+
+        {% if prediction %}
+            <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

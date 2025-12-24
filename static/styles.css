@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("back.jpg"); /* Corrected the path */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+} 
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for contrast */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width of the viewport */
+    max-width: 800px; /* Set a maximum width */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between elements */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+h1 {
+    grid-column: span 2; /* Make the title span across both columns */
+    text-align: left; /* Left-align the heading */
+    margin-bottom: 20px;
+    color: #333; /* Heading color */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333; /* Label color */
+}
+
+input[type="number"],
+select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="submit"] {
+    grid-column: span 2; /* Make the button span across both columns */
+    padding: 10px;
+    background-color: #28a745; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Add space above button */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+h2 {
+    text-align: center; /* Center the prediction message */
+    margin-top: 20px;
+    color: #333; /* Prediction message color */
+    grid-column: span 2; /* Make prediction message span across both columns */
+}
+
