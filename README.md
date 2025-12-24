@@ -160,11 +160,8 @@ Feel free to fork this project and submit pull requests for any improvements.
 
 This project is available for educational and research purposes.
 
-## 🔮 Future Enhancements
+Name: Chaitanya Vardhineedi
 
-- Add more features for better prediction accuracy
-- Implement user authentication
-- Add data visualization for insights
-- Deploy to cloud platform (Heroku, AWS, etc.)
-- Add API endpoints for mobile applications
-- Implement model retraining functionality
+Email: chaitanyavardhineedi@gmail.com
+
+GitHub: @chaitanya337
